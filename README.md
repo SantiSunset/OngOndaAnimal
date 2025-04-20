@@ -3,7 +3,7 @@ Projeto ONG ONDA Animal
 
 # Descrição do Projeto 
 
-Durante o primeiro projeto de extensão , desenvolvi uma landing page para a ONG ONDA ANIMAL, aplicando os conhecimentos adquiridos no curso de Análise e Desenvolvimento de Sistemas, com foco em UX Design, HTML, CSS, JavaScript e Bootstrap.
+Durante o primeiro projeto de extensão , desenvolvi uma landing page para a ONG ONDA ANIMAL, aplicando os conhecimentos adquiridos no curso de Análise e Desenvolvimento de Sistemas, com foco em UX Design, HTML, CSS, JavaScript e Tailwind.
 
 As atividades realizadas incluíram:
 
@@ -13,7 +13,7 @@ Planejamento da estrutura da página (wireframe) com foco na experiência do usu
 
 Desenvolvimento do layout e design responsivo, compatível com dispositivos móveis e desktops.
 
-Implementação da programação em HTML, CSS, JavaScript e Bootstrap, com foco na performance e usabilidade.
+Implementação da programação em HTML, CSS, JavaScript e Tailwind, com foco na performance e usabilidade.
 
 Criação de um formulário de contato funcional, direcionado a interessados em se voluntariar ou realizar doações.
 
@@ -43,6 +43,12 @@ Mesmo sem o retorno da ONG até o momento, considero a experiência válida e tr
 
 Utilizei a plataforma da Hostinger para hospedagem do site. 
 Utilizei a plataforma da WIX para armazenamento de algumas imagens. (Foi preciso pois por algum motivo ocorria erro na Hostinger)
+
+
+# Wireframe inicial: 
+![wireframe](https://github.com/user-attachments/assets/2731ad0e-47bd-422d-9b4c-da74062cab0f)
+
+
 
 
 
