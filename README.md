@@ -38,3 +38,11 @@ A prática de trabalhar com prazos, documentação e entrega de um produto digit
 
 Mesmo sem o retorno da ONG até o momento, considero a experiência válida e transformadora, consolidando minha confiança e autonomia como futuro desenvolvedor.
 
+
+# Observações: 
+
+Utilizei a plataforma da Hostinger para hospedagem do site. 
+Utilizei a plataforma da WIX para armazenamento de algumas imagens. (Foi preciso pois por algum motivo ocorria erro na Hostinger)
+
+
+
