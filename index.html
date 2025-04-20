@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONDA Animal - 22 anos transformando vidas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .akaya-kanadaka-regular {
+            font-family: "Akaya Kanadaka", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .map-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* Proporção 16:9 para responsividade */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 75%;
+            height: 75%;
+        }
+
+        /* Estilo para o menu ativo */
+        #menu.active {
+            display: flex;
+        }
+
+        /* Garante que o menu sempre apareça acima do conteúdo */
+        #menu {
+            z-index: 30;
+        }
+
+        /* Garante que o header sempre apareça acima do conteúdo */
+        header {
+            position: relative;
+            z-index: 50;
+        }
+    </style>
+</head>
+
+<body class="font-montserrat leading-6">
+
+    <header>
+        <nav class="bg-white shadow py-4">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between">
+                    <a class="flex items-center" href="#">
+                        <img src="https://white-penguin-311807.hostingersite.com/imagens/logo.png" alt="Logo ONDA"
+                            class="h-10">
+                    </a>
+                    <!-- Menu Hamburguer -->
+                    <button id="menu-toggle"
+                        class="lg:hidden text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M4 5h16a1 1 0 011 1v1a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1zm0 6h16a1 1 0 011 1v1a1 1 0 01-1 1H4a1 1 0 01-1-1v-1a1 1 0 011-1zm0 6h16a1 1 0 011 1v1a1 1 0 01-1 1H4a1 1 0 01-1-1v-1a1 1 0 011-1z" />
+                        </svg>
+                    </button>
+
+                    <!-- Links de Navegação -->
+                    <div class="hidden lg:flex items-center space-x-6">
+                        <a class="text-gray-700 hover:text-blue-500" href="#hero">Início</a>
+                        <a class="text-gray-700 hover:text-blue-500" href="#sobre-nos">Sobre Nós</a>
+                        <a class="text-gray-700 hover:text-blue-500" href="#projetos">Projetos</a>
+                        <a class="text-gray-700 hover:text-blue-500" href="#ajude">Como Ajudar</a>
+                        <a class="text-gray-700 hover:text-blue-500" href="#Relatos">Relatos</a>
+                        <a class="text-gray-700 hover:text-blue-500" href="#contato">Contato</a>
+                    </div>
+                </div>
+
+                <!-- Menu Mobile (Hamburguer) -->
+                <div id="menu" class="lg:hidden hidden flex-col absolute top-full right-0 bg-white shadow-md rounded py-2
+                    w-full">
+                    <a class="block text-gray-700 hover:text-blue-500 py-2 px-4" href="#hero">Início</a>
+                    <a class="block text-gray-700 hover:text-blue-500 py-2 px-4" href="#sobre-nos">Sobre Nós</a>
+                    <a class="block text-gray-700 hover:text-blue-500 py-2 px-4" href="#projetos">Projetos</a>
+                    <a class="block text-gray-700 hover:text-blue-500 py-2 px-4" href="#ajude">Como Ajudar</a>
+                    <a class="block text-gray-700 hover:text-blue-500 py-2 px-4" href="#Relatos">Relatos</a>
+                    <a class="block text-gray-700 hover:text-blue-500 py-2 px-4" href="#contato">Contato</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="relative flex items-center justify-center bg-cover bg-center h-screen"
+        style="background-image: url('https://static.wixstatic.com/media/bcddbb_316c5709281340d8804e0db65c659ba5~mv2.png'); height: 50vh;">
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
+        <div class="container hero-content relative z-20 text-center text-white">
+            <h1 class="akaya-kanadaka-regular text-4xl md:text-5xl lg:text-6xl">ONDA Animal: Há 22 anos transformando
+                vidas de animais.</h1>
+            <p class="text-lg md:text-xl lg:text-2xl text-pastel">Protegendo, cuidando e encontrando lares amorosos
+                para animais abandonados e necessitados em Gravataí e região.</p>
+            <a href="#ajude"
+                class="inline-block mt-4 py-2 px-4 bg-green-500 hover:bg-green-700 text-white font-bold rounded">Saiba
+                Como Ajudar</a>
+        </div>
+    </section>
+
+    <section id="sobre-nos" class="py-10 bg-white">
+        <div class="container mx-auto px-4">
+            <hr class="mb-8">
+            <h2 class="section-title text-center font-bold mb-8 akaya-kanadaka-regular text-3xl">Nossa História</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <p class="mb-6">A ONDA Animal é uma ONG dedicada a transformar a vida de animais abandonados e
+                        maltratados. Nossa missão começou com a paixão de um grupo de amigos por animais e rapidamente
+                        cresceu para se tornar uma das organizações mais respeitadas no cuidado animal. Ao longo dos
+                        anos, resgatamos milhares de animais, proporcionando-lhes cuidados médicos, abrigo e, acima de
+                        tudo, amor. Nossa história é marcada por desafios superados e incontáveis histórias de sucesso,
+                        graças ao apoio de nossos colaboradores e voluntários dedicados.</p>
+                    <ul>
+                        <li class="flex items-center mb-2">
+                            <img src="https://static.wixstatic.com/media/bcddbb_2d137b0aefde430cb3210ee650c40abf~mv2.gif"
+                                alt="Animais Resgatados" class="w-12 h-12 mr-2">
+                            <span>+ de <span class="contador font-bold text-xl text-blue-500"
+                                    data-meta="300">0</span> Animais resgatados</span>
+                        </li>
+                        <li class="flex items-center mb-2">
+                            <img src="https://static.wixstatic.com/media/bcddbb_d9e882597e8d42d991c505a705e46f63~mv2.gif"
+                                alt="Atendimentos veterinários" class="w-12 h-12 mr-2">
+                            + de <span class="contador font-bold text-xl text-blue-500" data-meta="500">0</span>
+                            Atendimentos veterinários
+                        </li>
+                        <li class="flex items-center mb-2">
+                            <img src="https://static.wixstatic.com/media/bcddbb_43b41784c5bb45e9aff689e3192b35bf~mv2.gif"
+                                alt="Lares encontrados" class="w-12 h-12 mr-2">
+                            + de <span class="contador font-bold text-xl text-blue-500" data-meta="1000">0</span> Lares
+                            encontrados
+                        </li>
+                        <li class="flex items-center mb-2">
+                            <img src="https://static.wixstatic.com/media/bcddbb_36f93a7d043645d382d2b4d8d675a8e8~mv2.gif"
+                                alt="Castrações realizadas" class="w-12 h-12 mr-2">
+                            + de <span class="contador font-bold text-xl text-blue-500" data-meta="1000">0</span>
+                            Castrações realizadas
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://static.wixstatic.com/media/bcddbb_cc5aa7551d5145cda76570e97e506266~mv2.png"
+                        alt="Equipe" class="img-fluid mx-auto max-h-96">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="bg-green-100 py-12">
+        <div class="container mx-auto px-4">
+            <hr class="mb-8">
+            <h2 class="section-title text-center font-bold mb-8 akaya-kanadaka-regular text-3xl">O Que Fazemos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card bg-white rounded shadow-md p-4">
+                    <h5 class="card-title text-pastel text-xl font-semibold mb-2">Clínica Veterinária</h5>
+                    <p class="card-text">Oferecemos consultas, internações, cirurgias e muito mais com equipe
+                        especializada. Agende uma consulta e garanta o melhor cuidado para seu animal.</p>
+                    <a href="https://api.whatsapp.com/send/?phone=555199892749&text&type=phone_number&app_absent=0"
+                        class="inline-block mt-4 py-2 px-4 bg-green-500 hover:bg-green-700 text-white font-bold rounded">Agende
+                        uma consulta</a>
+                </div>
+                <div class="card bg-white rounded shadow-md p-4">
+                    <h5 class="card-title text-pastel text-xl font-semibold mb-2">Resgate e Reabilitação</h5>
+                    <p class="card-text">Identificamos e resgatamos animais em risco, fornecendo cuidados emergenciais e
+                        reabilitação para prepará-los para a adoção.</p>
+                    <a href="https://api.whatsapp.com/send/?phone=555199892749&text&type=phone_number&app_absent=0"
+                        class="inline-block mt-4 py-2 px-4 bg-green-500 hover:bg-green-700 text-white font-bold rounded">Saiba
+                        mais</a>
+                </div>
+                <div class="card bg-white rounded shadow-md p-4">
+                    <h5 class="card-title text-pastel text-xl font-semibold mb-2">Castrações</h5>
+                    <p class="card-text">Castração de cães e gatos realizada por profissionais qualificados, utilizando
+                        técnicas modernas e anestesia segura. Proporcione uma vida mais saudável e feliz para o seu pet
+                        com nossos serviços.</p>
+                    <a href="https://api.whatsapp.com/send/?phone=555199892749&text&type=phone_number&app_absent=0"
+                        class="inline-block mt-4 py-2 px-4 bg-green-500 hover:bg-green-700 text-white font-bold rounded">Saiba
+                        mais</a>
+                </div>
+                <div class="card bg-white rounded shadow-md p-4">
+                    <h5 class="card-title text-pastel text-xl font-semibold mb-2">Programa de Adoção</h5>
+                    <p class="card-text">Facilitamos o processo de adoção, apresentando animais disponíveis e
+                        acompanhando cada etapa para garantir um lar seguro e amoroso.</p>
+                    <a href="https://www.instagram.com/stories/highlights/18016129292628922/"
+                        class="inline-block mt-4 py-2 px-4 bg-green-500 hover:bg-green-700 text-white font-bold rounded">Conheça
+                        os animais</a>
+                </div>
+                <div class="card bg-white rounded shadow-md p-4">
+                    <h5 class="card-title text-pastel text-xl font-semibold mb-2">Educação e Conscientização</h5>
+                    <p class="card-text">Promovemos campanhas e ações educativas que incentivam a posse responsável,
+                        previnem maus-tratos e estimulam a castração.</p>
+                    <a href="https://www.worldanimalprotection.org.br/participe/denuncia/"
+                        class="inline-block mt-4 py-2 px-4 bg-green-500 hover:bg-green-700 text-white font-bold rounded">Saiba
+                        como denunciar maus-tratos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ajude" class="py-10 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <hr class="mb-8">
+            <h2 class="section-title text-center font-bold mb-8 akaya-kanadaka-regular text-3xl">Faça a Diferença</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card bg-white rounded shadow-md p-4">
+                    <h5 class="card-title text-pastel text-xl font-semibold mb-2">Doações</h5>
+                    <p class="card-text">Suas doações são fundamentais para manter nossos projetos.</p>
+                    <a href="https://www.vakinha.com.br/4826038"
+                        class="inline-block mt-4 py-2 px-4 bg-green-500 hover:bg-green-700 text-white font-bold rounded">Doar
+                        Agora</a>
+                </div>
+                <div class="card bg-white rounded shadow-md p-4">
+                    <h5 class="card-title text-pastel text-xl font-semibold mb-2">Voluntariado</h5>
+                    <p class="card-text">Seja voluntário e contribua com cuidados, eventos e divulgação para
+                        transformar a vida de muitos animais.</p>
+                    <form id="volunteerForm" action="https://formsubmit.co/ondaanimal.cea@gmail.com" method="POST">
+                        <input type="hidden" name="_next"
+                            value="https://white-penguin-311807.hostingersite.com/#ajude">
+                        <input type="hidden" name="_subject" value="Inscrição de Voluntário - ONDA Animal">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="mb-3">
+                            <input type="text" name="name" class="form-control w-full px-3 py-2 border rounded"
+                                placeholder="Seu Nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" class="form-control w-full px-3 py-2 border rounded"
+                                placeholder="Seu Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" class="form-control w-full px-3 py-2 border rounded" rows="3"
+                                placeholder="Como você pode ajudar?" required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="inline-block mt-4 py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded">Inscrever-se</button>
+                    </form>
+                </div>
+                <div class="card bg-white rounded shadow-md p-4">
+                    <h5 class="card-title text-pastel text-xl font-semibold mb-2">Apadrinhamento & Divulgação</h5>
+                    <p class="card-text">Apoie um animal específico ou ajude a espalhar a mensagem de nossa causa nas
+                        redes sociais.</p>
+                    <a href="https://api.whatsapp.com/send/?phone=555199892749&text&type=phone_number&app_absent=0"
+                        class="inline-block mt-4 py-2 px-4 bg-green-500 hover:bg-green-700 text-white font-bold rounded">Saiba
+                        mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Relatos" class="bg-green-100 py-12">
+        <div class="container mx-auto px-4  h-50">
+            <hr class="mb-8">
+            <h2 class="section-title text-center font-bold mb-8 akaya-kanadaka-regular text-3xl">Relatos</h2>
+            <div class="flex justify-center">
+                <img id="relato-image"
+                    src="https://static.wixstatic.com/media/bcddbb_336509dada2e4a8892e3d3e2d24fda46~mv2.png"
+                    alt="Relato 1"
+                    class="max-w-[300px] rounded shadow-lg cursor-pointer transition-shadow duration-300 hover:shadow-xl">
+            </div>
+            <div
+                class="image-zoom-overlay fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-1000 hidden">
+                <img src="" alt="Imagem Ampliada" class="max-w-90 max-h-90 rounded shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-10 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <hr class="mb-8">
+            <h2 class="section-title text-center font-bold mb-8 akaya-kanadaka-regular text-3xl">Fale Conosco</h2>
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 mb-6 md:mb-0">
+                    <h5 class="text-lg font-semibold mb-4">Informações de Contato</h5>
+                    <div class="contact-info mb-4">
+                        <h5 class="font-semibold">Em GRAVATAÍ</h5>
+                        <p><strong>Endereço:</strong> R. Francisco Tafas, 67 - Centro, Gravataí - RS, 94920-020</p>
+                        <p><strong>Telefone:</strong> (51) 3112-5091 ☎️</p>
+                        <p><strong>Telefone:</strong> (51) 9 9989-2749 📱</p>
+                    </div>
+                    <div class="contact-info mb-4">
+                        <h5 class="font-semibold">Em CACHOEIRINHA</h5>
+                        <p><strong>Endereço:</strong> Rua: Iracema, 185, Monte Carlo, Cachoeirinha</p>
+                        <p><strong>Telefone:</strong> (51) 3041-5081 ☎️</p>
+                        <p><strong>Telefone:</strong> (51) 9 9933-7122 📱</p>
+                    </div>
+                    <div class="contact-info mb-4">
+                        <p><strong>Email:</strong> <a href="mailto:ondaanimal.cea@gmail.com"
+                                class="text-blue-500">ondaanimal.cea@gmail.com</a></p>
+                        <p><strong>Redes Sociais:</strong>
+                            <a href="https://www.facebook.com/ONGONDA/" class="text-blue-500">FACEBOOK</a> |
+                            <a href="https://www.instagram.com/_ondaanimal/" class="text-blue-500">INSTAGRAM</a>
+                        </p>
+                    </div>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.4573746200344!2d-50.999200923587715!3d-29.93752012632788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519709eb49e6c57%3A0x1a2d4fd401d44461!2sONG%20ONDA!5e0!3m2!1spt-BR!2sbr!4v1744305538937!5m2!1spt-BR!2sbr"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h5 class="text-lg font-semibold mb-4">Envie uma Mensagem</h5>
+                    <form id="contactForm" action="https://formsubmit.co/ondaanimal.cea@gmail.com" method="POST">
+                        <input type="hidden" name="_next"
+                            value="https://white-penguin-311807.hostingersite.com/#contato">
+                        <input type="hidden" name="_subject" value="Nova mensagem do site ONDA Animal">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="mb-3">
+                            <input type="text" name="name" class="form-control w-full px-3 py-2 border rounded"
+                                placeholder="Seu Nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" class="form-control w-full px-3 py-2 border rounded"
+                                placeholder="Seu Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" class="form-control w-full px-3 py-2 border rounded" rows="5"
+                                placeholder="Sua Mensagem" required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="inline-block mt-4 py-2 px-4 bg-green-500 hover:bg-green-700 text-white font-bold rounded">Enviar
+                            Mensagem</button>
+                    </form>
+
+                    <section id="petlove-promo" class="py-3">
+                        <a href="https://www.petlove.com.br/?coupon=@MEUPET9000" target="_blank">
+                            <img src="https://static.wixstatic.com/media/bcddbb_2e3dcd1b00e143b697e521108cbb7800~mv2.png"
+                                alt="Promoção Petlove" class="w-full max-w-md mx-auto">
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-5">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 ONDA Animal. Todos os direitos reservados.</p>
+            <p>CNPJ: 12.345.678/0001-90</p>
+            <p>Site criado por @Santisunset</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Boas Vindas -->
+    <div class="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50 hidden"
+        id="welcomeModal">
+        <div class="bg-white rounded shadow-lg p-6 max-w-md">
+            <div class="flex justify-between items-center mb-4">
+                <h5 class="text-xl font-semibold">Presente de Boas Vindas!</h5>
+                <button type="button" class="close-modal text-gray-500 hover:text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <a href="https://www.petlove.com.br/?coupon=@MEUPET9000" target="_blank">
+                <img src="https://static.wixstatic.com/media/bcddbb_2e3dcd1b00e143b697e521108cbb7800~mv2.png"
+                    alt="Imagem de Boas-Vindas" class="img-fluid">
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Menu Hamburguer
+            const menuToggle = document.getElementById('menu-toggle');
+            const menu = document.getElementById('menu');
+
+            menuToggle.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+            });
+
+            // Scroll suave
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Modal de Boas Vindas
+            const welcomeModal = document.getElementById('welcomeModal');
+            const closeModalButton = document.querySelector('.close-modal');
+
+            // Mostra o modal
+            welcomeModal.classList.remove('hidden');
+
+            // Esconde o modal ao clicar no botão de fechar
+            closeModalButton.addEventListener('click', function () {
+                welcomeModal.classList.add('hidden');
+            });
+
+            // Contadores
+            const counters = document.querySelectorAll('.contador');
+            counters.forEach(counter => {
+                const targetNumber = parseInt(counter.getAttribute('data-meta'));
+                let count = 0;
+                const increment = Math.ceil(targetNumber / 100);
+
+                const interval = setInterval(() => {
+                    count += increment;
+                    counter.textContent = count > targetNumber ? targetNumber : count;
+
+                    if (count >= targetNumber) {
+                        clearInterval(interval);
+                    }
+                }, 30);
+            });
+
+            // Zoom da imagem de relatos
+            const relatoImage = document.getElementById('relato-image');
+            const zoomOverlay = document.querySelector('.image-zoom-overlay');
+            const zoomImage = zoomOverlay.querySelector('img');
+
+            relatoImage.addEventListener('click', function () {
+                zoomImage.src = this.src;
+                zoomOverlay.style.display = 'flex';
+            });
+
+            zoomOverlay.addEventListener('click', function (event) {
+                if (event.target === this) {
+                    zoomOverlay.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
