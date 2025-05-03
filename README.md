@@ -17,8 +17,7 @@ Implementação da programação em HTML, CSS, JavaScript e Tailwind, com foco n
 
 Criação de um formulário de contato funcional, direcionado a interessados em se voluntariar ou realizar doações.
 
-Publicação do site em ambiente online através da plataforma Hostinger: 👉 https://white-penguin-311807.hostingersite.com/
-
+Publicação do site em ambiente online através da plataforma Hostinger: 👉 https://lightgoldenrodyellow-louse-863784.hostingersite.com/
 Contato com a ONG via e-mail e WhatsApp para apresentação do projeto e solicitação de retorno para possíveis ajustes e validação da proposta.
 
 
